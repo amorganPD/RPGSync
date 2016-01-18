@@ -1,0 +1,183 @@
+﻿body {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+.container {
+    position: absolute;
+    /* background-image: linear-gradient(0deg, #888888, #EEEEEE); */
+    background-image: linear-gradient(0deg, #020202, #242424);
+	width: 100%;
+	height: 100%;
+	margin: 0em;
+	padding: 0em;
+}
+
+.renderCanvas {
+    position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.fps {
+	color: white;
+	position: absolute;
+	top: 0em;
+	right: 0em;
+	margin: .1em;
+}
+
+.debugMenu {
+	display: none;
+	color: white;
+	position: absolute;
+	top: 2em;
+	right: 0em;
+	padding: .1em;
+	background-color: rgba(60,60,60,.5);
+	border-radius: .5em 0em 0em .5em;
+}
+
+.topMenu {
+	display: none;
+	color: white;
+	width: 22em;
+	background-color: rgba(60,60,60,.85);
+	border-bottom: solid 1px;
+	border-color: #A8A8A8;
+	border-radius: 0em 0em .5em .5em;
+	height: 1.4em;
+	position: absolute;
+	top: 0em;
+	left: calc(28% - 11em);
+	padding: .2em;
+}
+
+.healthBar {
+	display: inline-block;
+	width: 1em;
+	height: .6em;
+	padding: 0em;
+	background-color: rgba(200, 20, 20, .9);
+	border-radius: .2em;
+	border: solid 1px;
+	border-color: #AEAEAE;
+	box-shadow: inset -.05em -.05em .2em #282828;
+}
+
+.hotKeys {
+	display: none;
+	color: white;
+	background-color: rgba(60,60,60,.85);
+	border-top: solid 1px;
+	border-color: #A8A8A8;
+	border-radius: .5em .5em 0em 0em;
+	position: absolute;
+	bottom: 0em;
+	left: calc(50% - 6.6em);
+	padding: 0em .3em .2em .3em;
+}
+
+.hotKey {
+	display: inline-block;
+	height: 2.2em;
+	width: 2.2em;
+	background-color: rgba(120,120,120,1);
+	border: solid 1px;
+	border-radius: .2em;
+	border-color: #AEAEAE;
+	margin: .3em .1em .1em .1em;
+	box-shadow: inset -.1em -.1em .2em #282828;
+	padding: .1em .1em .1em .3em;
+}
+
+/*Modal CSS*/
+.modalUnderlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    opacity: .3;
+	background-color: #020202;
+}
+
+.modal {
+	font-family: Consolas;
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+	text-align: center;
+}
+
+.modalText {
+	text-align: center;
+	text-shadow: 1px 1px 3px #020202;
+	font-size: 1.5em;
+	color: white;	
+}
+
+.modalForeground {
+	display: inline-block;
+    position: relative;
+    top: 30%;
+    text-align: center;
+	width: auto;
+    height: auto;
+    min-height: 8em;
+	padding: 1.2em 2em 1.2em 2em;
+    background-color: rgba(200,200,200,.3);
+    /* border: 1px solid;
+    border-radius: 1em; */
+    border-color: #EEEEEE;
+	box-shadow: 3px 3px 6px #020202;
+    overflow: hidden;
+    z-index: 80;
+}
+.modalButton {
+	display: inline-block;
+	cursor: pointer;
+    /* background-image: linear-gradient(180deg, #888888, #444444 .2em); */
+	font-size: 3em;
+	color: #DDDDDD;
+	text-shadow: 1px 1px 3px #020202;
+	text-align: center;
+	background-color: #1188AA;
+	margin-top: .3em;
+	margin-bottom: .3em;
+	padding: .1em .4em .1em .4em;
+	/* border-bottom: 2px solid;
+    border-radius: .1em;
+    border-color: #282828; */
+	box-shadow: 2px 2px 4px #020202;
+}
+.modalButton:hover {
+	color: #020202;
+}
+/*END - Modal CSS*/
+
+.startGame {
+	cursor: default;
+	color: #020202;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../Fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Semibold";
+    src: url("../Fonts/OpenSans-Semibold.ttf");
+}
+
+@font-face {
+    font-family: "Leo-Arrow";
+    src: url("../Fonts/Leo-Arrow.ttf");
+}
+
+@font-face {
+    font-family: "Didact-Gothic";
+    src: url("../Fonts/DidactGothic.ttf");
+}
